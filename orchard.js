@@ -75,8 +75,8 @@ console.log("--------------------------------")
 
 // CODE HERE
 
-let averageDailyAcres = totalAcres / fujiAcres.length + galaAcres.length + pinkAcres.length;
-console.log(averageDailyAcres);
+let averageDailyAcres = totalAcres / (fujiAcres.length ); //AKA 7 days a week
+console.log("averageDailyAcres", averageDailyAcres);
 console.log("---------------------------------------");
 //EXPLANATION: Divide your total acres by each arrays length to get the average daily acres
 
@@ -117,7 +117,7 @@ while (acresLeft > 0) {
     acresLeft -= averageDailyAcres;
     days += 1;
 }
-console.log(days);
+console.log("days", days);
 //EXPLANATION: You have already calculated the average daily acres, so while the loop loops through your
 //code until acres = 0 you must subtract it by the average daily acres. This shows how many acres you can
 //go through each day based on your average amount of acres per day(23)
